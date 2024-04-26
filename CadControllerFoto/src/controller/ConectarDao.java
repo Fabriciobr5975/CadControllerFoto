@@ -11,11 +11,9 @@ public class ConectarDao {
     public PreparedStatement ps = null;
 
     public ConectarDao () {
-        String strcon = "jdbc:mysql://localhost:3306/projcad";//cria a string de conexão ao servidor xaamp 
-        
-        
+        String strcon = "jdbc:mysql://localhost:3306";//cria a string de conexão ao servidor xaamp 
+       
         try {
-
             mycon = DriverManager.getConnection(strcon, "root", "");
              criarBanco();
             
